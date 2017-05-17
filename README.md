@@ -1,2 +1,9 @@
 # MULT-Projecto
-Platformer feito com Phaser.io, HTML e CSS
+
+__Multimédia__
+
+Ano - __2016-2017__
+
+Score [0-20] -
+
+*Informatics Engineering __University of Coimbra__*
