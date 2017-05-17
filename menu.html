@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>DEI and NIGHT</title>
+	<meta charset="UTF-8">
+	<link href= "/Styles/menu.css" type="text/css" rel= "stylesheet">
+	<link rel="icon" type="image/png" href="/Imagens/logo.png" />
+	<script src="phaser.min.js"></script>
+	<script type="text/javascript" src="/Scripts/menu.js"></script>
+
+</head>
+<body>
+
+	<audio id="music" autoplay loop volume="0">
+		<source src="/Sons/music.mp3" type="audio/mpeg">
+			Your browser does not support the audio tag.
+	</audio>
+
+		<div id = "game">
+			<script type="text/javascript" src="/ScriptsInGame/levels.js"></script>
+			<script type="text/javascript" src="/ScriptsInGame/game.js"></script>
+		</div>
+		<header id = "menu">
+			<img src = "/Imagens/logo.png" class=logo>
+			<nav>
+				<div id= "menuprincipal" class = "centrado" >
+					<button class="btn" onclick="show('menuplay');"><b>Play</b></button><br>
+					<button class="btn" onclick="show('menuoptions');" onclick="show('volume');"><b>Options</b></button><br>
+					<button class="btn" onclick="show('menuhelp');"><b>Help</b></button><br>
+					<button class="btn" onclick="show('menucreditos');"><b>Créditos</b></button><br>
+				</div>
+
+				<div id="menuplay" class= "hidden">
+					<button class="btn" onclick="show('menustory');"><b>Story</b></button><br>
+					<button class="btn" onclick="show('menuarcade');"><b>Arcade</b></button><br>
+					<button class="btn" onclick="show('menuprincipal');"><b>Back</b></button><br>
+				</div>
+
+				<div id= "menustory" class = "hidden">
+					<button class="nivelbtn" onclick="start(1)"><b>Nivel 1</b></button>
+					<button class="nivelbtn" onclick="start(2)"><b>Nivel 2</b></button>
+					<button class="nivelbtn" onclick="start(3)"><b>Nivel 3</b></button>
+					<button class="nivelbtn" onclick="start(4)"><b>Nivel 4</b></button>
+					<button class="nivelbtn" onclick="start(5)"><b>Nivel 5</b></button>
+					<button class="nivelbtn" onclick="start(6)"><b>Nivel 6</b></button>
+					<button class="btn" onclick="show('menuplay');"><b>Back</b></button><br>
+				</div>
+
+				<div id= "menuarcade" class = "hidden">
+					<button class="nivelbtn" onclick="start(1,1)"><b>Nivel 1</b></button>
+					<button class="nivelbtn" onclick="start(2,1)"><b>Nivel 2</b></button>
+					<button class="nivelbtn" onclick="start(3,1)"><b>Nivel 3</b></button>
+					<button class="nivelbtn" onclick="start(4,1)"><b>Nivel 4</b></button>
+					<button class="nivelbtn" onclick="start(5,1)"><b>Nivel 5</b></button>
+					<button class="nivelbtn" onclick="start(6,1)"><b>Nivel 6</b></button>
+					<button class="btn" onclick="show('menuplay');"><b>Back</b></button><br>
+				</div>
+
+				<div id="menuoptions" class= "hidden">
+					<button class="volbtn" onclick="decreaseVolume()" type="button"><b>-</b></button>
+					<button id="musicbtn" class="volbtn" onclick="muteVolume()" type="button"><b>Music</b></button>
+					<button class="volbtn" onclick="increaseVolume()" type="button"><b>+</b></button><br>
+					<button class="volbtn" type="button"><b>-</b></button>
+					<button class="volbtn" type="button"><b>Sound</b></button>
+					<button class="volbtn" type="button"><b>+</b></button><br>
+					<button class="btn" onclick="show('menuprincipal');"><b>Back</b></button><br>
+				</div>
+
+				<div id="menuhelp" class= "hidden">
+					<img src = "/Imagens/controls.png" class="controls">
+					<h1>Usa o E para trocar entre o dia e a noite. </h1>
+					<h1>Apanha os 9.5 para fazer cadeiras.</h1>
+					<h1>Evita os picos e os professores para nao morreres!</h1>
+					<button class="btn" onclick="show('menuprincipal');"><b>Back</b></button><br>
+				</div>
+
+				<div id="menucreditos" class="hidden">
+					<h1> Jogo realizado por: </h1>
+					<h2> Francisco Santos - 2015238068 </h2>
+					<h2> João Afonso - 2015227041</h2>
+					<h2> Leonardo Vieira - 2015236155</h2>
+					<button class="btn" onclick="show('menuprincipal');"><b>Back</b></button><br>
+				</div>
+
+			</nav>
+		</header>
+
+	</body>
+	</html>

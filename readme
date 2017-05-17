@@ -1,0 +1,7 @@
+Para este projecto foi utilizado a framework "Phaser.io". Assim sendo, para garantir o bom funcionamento da aplicação de browser é necessario correr esta num servidor local.
+
+Numa bash de linux:
+  Basta correr o comando no terminal "python -m SimpleHTTPServer"
+
+Em windows:
+  É necessario utilizar alguma ferramenta auxiliar para criar o servidor local.
